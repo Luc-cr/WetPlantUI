@@ -1,0 +1,11 @@
+C:\Users\Lukc\Desktop\.dev\C#\Clone\WetPlantUI\WetPlantUI\WetPlantUI\bin\Debug\WetPlantUI.exe.config
+C:\Users\Lukc\Desktop\.dev\C#\Clone\WetPlantUI\WetPlantUI\WetPlantUI\bin\Debug\WetPlantUI.exe
+C:\Users\Lukc\Desktop\.dev\C#\Clone\WetPlantUI\WetPlantUI\WetPlantUI\bin\Debug\WetPlantUI.pdb
+C:\Users\Lukc\Desktop\.dev\C#\Clone\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.csproj.AssemblyReference.cache
+C:\Users\Lukc\Desktop\.dev\C#\Clone\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lukc\Desktop\.dev\C#\Clone\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.Form1.resources
+C:\Users\Lukc\Desktop\.dev\C#\Clone\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.Properties.Resources.resources
+C:\Users\Lukc\Desktop\.dev\C#\Clone\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.csproj.GenerateResource.cache
+C:\Users\Lukc\Desktop\.dev\C#\Clone\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.csproj.CoreCompileInputs.cache
+C:\Users\Lukc\Desktop\.dev\C#\Clone\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.exe
+C:\Users\Lukc\Desktop\.dev\C#\Clone\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.pdb
