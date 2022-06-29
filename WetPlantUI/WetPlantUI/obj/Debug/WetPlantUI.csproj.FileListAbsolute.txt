@@ -9,3 +9,14 @@ C:\Users\Lukc\Desktop\.dev\C#\Clone\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\W
 C:\Users\Lukc\Desktop\.dev\C#\Clone\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.csproj.CoreCompileInputs.cache
 C:\Users\Lukc\Desktop\.dev\C#\Clone\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.exe
 C:\Users\Lukc\Desktop\.dev\C#\Clone\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.pdb
+A:\Productivity\Coding\C#\WetPlantUI\WetPlantUI\WetPlantUI\bin\Debug\WetPlantUI.exe.config
+A:\Productivity\Coding\C#\WetPlantUI\WetPlantUI\WetPlantUI\bin\Debug\WetPlantUI.exe
+A:\Productivity\Coding\C#\WetPlantUI\WetPlantUI\WetPlantUI\bin\Debug\WetPlantUI.pdb
+A:\Productivity\Coding\C#\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.csproj.AssemblyReference.cache
+A:\Productivity\Coding\C#\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.csproj.SuggestedBindingRedirects.cache
+A:\Productivity\Coding\C#\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.Form1.resources
+A:\Productivity\Coding\C#\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.Properties.Resources.resources
+A:\Productivity\Coding\C#\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.csproj.GenerateResource.cache
+A:\Productivity\Coding\C#\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.csproj.CoreCompileInputs.cache
+A:\Productivity\Coding\C#\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.exe
+A:\Productivity\Coding\C#\WetPlantUI\WetPlantUI\WetPlantUI\obj\Debug\WetPlantUI.pdb
