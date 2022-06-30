@@ -45,7 +45,7 @@
             // lblTemperature
             // 
             this.lblTemperature.BackColor = System.Drawing.Color.Transparent;
-            this.lblTemperature.Font = new System.Drawing.Font("Digital Numbers", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblTemperature.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(60)))));
             this.lblTemperature.Location = new System.Drawing.Point(11, 144);
             this.lblTemperature.Margin = new System.Windows.Forms.Padding(0);
@@ -62,7 +62,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPort.BackColor = System.Drawing.Color.Transparent;
-            this.lblPort.Font = new System.Drawing.Font("Didact Gothic", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblPort.ForeColor = System.Drawing.Color.White;
             this.lblPort.Location = new System.Drawing.Point(24, 744);
             this.lblPort.Margin = new System.Windows.Forms.Padding(0);
@@ -75,7 +75,7 @@
             // lblHumidity
             // 
             this.lblHumidity.BackColor = System.Drawing.Color.Transparent;
-            this.lblHumidity.Font = new System.Drawing.Font("Digital Numbers", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblHumidity.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblHumidity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(60)))));
             this.lblHumidity.Location = new System.Drawing.Point(11, 264);
             this.lblHumidity.Margin = new System.Windows.Forms.Padding(0);
@@ -89,7 +89,7 @@
             // lblLightning
             // 
             this.lblLightning.BackColor = System.Drawing.Color.Transparent;
-            this.lblLightning.Font = new System.Drawing.Font("Digital Numbers", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblLightning.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblLightning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(60)))));
             this.lblLightning.Location = new System.Drawing.Point(11, 384);
             this.lblLightning.Margin = new System.Windows.Forms.Padding(0);
@@ -103,9 +103,9 @@
             // lblSpeed
             // 
             this.lblSpeed.BackColor = System.Drawing.Color.Transparent;
-            this.lblSpeed.Font = new System.Drawing.Font("Digital Numbers", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblSpeed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(60)))));
-            this.lblSpeed.Location = new System.Drawing.Point(13, 504);
+            this.lblSpeed.Location = new System.Drawing.Point(-3, 505);
             this.lblSpeed.Margin = new System.Windows.Forms.Padding(0);
             this.lblSpeed.Name = "lblSpeed";
             this.lblSpeed.Size = new System.Drawing.Size(179, 72);

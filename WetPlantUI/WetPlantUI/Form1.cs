@@ -48,11 +48,11 @@ namespace WetPlantUI
         private void Form1_Load(object sender, EventArgs e)
         {
             // Configuracion del puerto
-            /*
             serial.Config("COM4", 9600);
             serial.SetTimeout(500, 500);
-            */
-            lblPort.Text = "Puerto: " + serial.GetPort();
+            serial.Open();
+
+            //lblPort.Text = "Puerto: " + serial.GetPort();
 
             if(serial.Open() == false)
             {
@@ -95,30 +95,7 @@ namespace WetPlantUI
 
         public string GetPort()
         {
-            string[] ports = SerialPort.GetPortNames();
-
-            foreach(string port in ports)
-            {
-                serialport.PortName = port;
-                serialport.BaudRate = 9600;
-                try
-                {
-                    serialport.Open();
-
-                    Thread.Sleep(5000);
-
-                    if (serialport.ReadLine().Contains("arduino"))
-                    {
-                        return port;
-                    }
-
-
-                    serialport.Close();
-                }
-                catch { }
-            }
-
-            return "Empty";
+            return serialport.PortName;
         }
 
         public bool Open()
