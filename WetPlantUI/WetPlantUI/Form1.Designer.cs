@@ -55,6 +55,7 @@
             this.lblTemperature.Text = "100";
             this.lblTemperature.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblTemperature.UseMnemonic = false;
+            this.lblTemperature.Click += new System.EventHandler(this.lblTemperature_Click);
             // 
             // lblPort
             // 

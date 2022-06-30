@@ -2,7 +2,8 @@
 using System.IO.Ports;
 using System.Threading;
 using System.Windows.Forms;
-
+using System.Drawing.Text;
+using System.Drawing;
 namespace WetPlantUI
 {
     public partial class Form1 : Form
@@ -47,13 +48,16 @@ namespace WetPlantUI
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc.AddFontFile("WetPlantUI/Fonts/DigitalNumbers-Regular.ttf");
+            lblTemperature.Font = new Font(pfc.Families[0], 15);
             // Configuracion del puerto
             serial.Config("COM4", 9600);
             serial.SetTimeout(500, 500);
-            serial.Open();
 
-            //lblPort.Text = "Puerto: " + serial.GetPort();
-
+            lblPort.Text = "Puerto: " + serial.GetPort();
+            lblSpeed.Text = serial.GetBaudrate();
+            
             if(serial.Open() == false)
             {
                 // MSG BOX de error
@@ -64,12 +68,18 @@ namespace WetPlantUI
             // Nuevo proceso
             thread = new Thread(new ThreadStart(UpdateData));
             thread.Start();
+            Thread.Sleep(100);
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             //Cerrar el Proceso
             thread.Abort();
+        }
+
+        private void lblTemperature_Click(object sender, EventArgs e)
+        {
+
         }
     }
     public class Serial
@@ -96,6 +106,11 @@ namespace WetPlantUI
         public string GetPort()
         {
             return serialport.PortName;
+        }
+
+        public string GetBaudrate()
+        {
+            return serialport.BaudRate.ToString();
         }
 
         public bool Open()
