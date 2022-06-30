@@ -29,58 +29,120 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblTemperature = new System.Windows.Forms.Label();
+            this.lblPort = new System.Windows.Forms.Label();
+            this.lblHumidity = new System.Windows.Forms.Label();
+            this.lblLightning = new System.Windows.Forms.Label();
+            this.lblSpeed = new System.Windows.Forms.Label();
+            this.pbFanOff = new System.Windows.Forms.PictureBox();
+            this.pbBombOff = new System.Windows.Forms.PictureBox();
+            this.pbLightOff = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFanOff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBombOff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLightOff)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblTemperature
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 144);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblTemperature.BackColor = System.Drawing.Color.Transparent;
+            this.lblTemperature.Font = new System.Drawing.Font("Digital Numbers", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblTemperature.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(60)))));
+            this.lblTemperature.Location = new System.Drawing.Point(11, 144);
+            this.lblTemperature.Margin = new System.Windows.Forms.Padding(0);
+            this.lblTemperature.Name = "lblTemperature";
+            this.lblTemperature.Size = new System.Drawing.Size(141, 72);
+            this.lblTemperature.TabIndex = 0;
+            this.lblTemperature.Text = "100";
+            this.lblTemperature.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblTemperature.UseMnemonic = false;
             // 
-            // label2
+            // lblPort
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 264);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.lblPort.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPort.BackColor = System.Drawing.Color.Transparent;
+            this.lblPort.Font = new System.Drawing.Font("Didact Gothic", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblPort.ForeColor = System.Drawing.Color.White;
+            this.lblPort.Location = new System.Drawing.Point(24, 744);
+            this.lblPort.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPort.Name = "lblPort";
+            this.lblPort.Size = new System.Drawing.Size(432, 72);
+            this.lblPort.TabIndex = 4;
+            this.lblPort.Text = "Puerto: COM3";
+            this.lblPort.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label3
+            // lblHumidity
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 384);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.lblHumidity.BackColor = System.Drawing.Color.Transparent;
+            this.lblHumidity.Font = new System.Drawing.Font("Digital Numbers", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblHumidity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(60)))));
+            this.lblHumidity.Location = new System.Drawing.Point(11, 264);
+            this.lblHumidity.Margin = new System.Windows.Forms.Padding(0);
+            this.lblHumidity.Name = "lblHumidity";
+            this.lblHumidity.Size = new System.Drawing.Size(141, 72);
+            this.lblHumidity.TabIndex = 5;
+            this.lblHumidity.Text = "100";
+            this.lblHumidity.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblHumidity.UseMnemonic = false;
             // 
-            // label4
+            // lblLightning
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 504);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.lblLightning.BackColor = System.Drawing.Color.Transparent;
+            this.lblLightning.Font = new System.Drawing.Font("Digital Numbers", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblLightning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(60)))));
+            this.lblLightning.Location = new System.Drawing.Point(11, 384);
+            this.lblLightning.Margin = new System.Windows.Forms.Padding(0);
+            this.lblLightning.Name = "lblLightning";
+            this.lblLightning.Size = new System.Drawing.Size(141, 72);
+            this.lblLightning.TabIndex = 6;
+            this.lblLightning.Text = "100";
+            this.lblLightning.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblLightning.UseMnemonic = false;
             // 
-            // label5
+            // lblSpeed
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 744);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
+            this.lblSpeed.BackColor = System.Drawing.Color.Transparent;
+            this.lblSpeed.Font = new System.Drawing.Font("Digital Numbers", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblSpeed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(60)))));
+            this.lblSpeed.Location = new System.Drawing.Point(13, 504);
+            this.lblSpeed.Margin = new System.Windows.Forms.Padding(0);
+            this.lblSpeed.Name = "lblSpeed";
+            this.lblSpeed.Size = new System.Drawing.Size(179, 72);
+            this.lblSpeed.TabIndex = 7;
+            this.lblSpeed.Text = "9600";
+            this.lblSpeed.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblSpeed.UseMnemonic = false;
+            // 
+            // pbFanOff
+            // 
+            this.pbFanOff.BackColor = System.Drawing.Color.Transparent;
+            this.pbFanOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbFanOff.BackgroundImage")));
+            this.pbFanOff.Location = new System.Drawing.Point(144, 24);
+            this.pbFanOff.Name = "pbFanOff";
+            this.pbFanOff.Size = new System.Drawing.Size(72, 72);
+            this.pbFanOff.TabIndex = 8;
+            this.pbFanOff.TabStop = false;
+            // 
+            // pbBombOff
+            // 
+            this.pbBombOff.BackColor = System.Drawing.Color.Transparent;
+            this.pbBombOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBombOff.BackgroundImage")));
+            this.pbBombOff.Location = new System.Drawing.Point(264, 24);
+            this.pbBombOff.Name = "pbBombOff";
+            this.pbBombOff.Size = new System.Drawing.Size(72, 72);
+            this.pbBombOff.TabIndex = 9;
+            this.pbBombOff.TabStop = false;
+            // 
+            // pbLightOff
+            // 
+            this.pbLightOff.BackColor = System.Drawing.Color.Transparent;
+            this.pbLightOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbLightOff.BackgroundImage")));
+            this.pbLightOff.Location = new System.Drawing.Point(384, 24);
+            this.pbLightOff.Name = "pbLightOff";
+            this.pbLightOff.Size = new System.Drawing.Size(72, 72);
+            this.pbLightOff.TabIndex = 10;
+            this.pbLightOff.TabStop = false;
             // 
             // Form1
             // 
@@ -88,11 +150,14 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(480, 840);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pbLightOff);
+            this.Controls.Add(this.pbBombOff);
+            this.Controls.Add(this.pbFanOff);
+            this.Controls.Add(this.lblSpeed);
+            this.Controls.Add(this.lblLightning);
+            this.Controls.Add(this.lblHumidity);
+            this.Controls.Add(this.lblPort);
+            this.Controls.Add(this.lblTemperature);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -103,18 +168,23 @@
             this.Text = "WetPlant";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbFanOff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBombOff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLightOff)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblTemperature;
+        private System.Windows.Forms.Label lblPort;
+        private System.Windows.Forms.Label lblHumidity;
+        private System.Windows.Forms.Label lblLightning;
+        private System.Windows.Forms.Label lblSpeed;
+        private System.Windows.Forms.PictureBox pbFanOff;
+        private System.Windows.Forms.PictureBox pbBombOff;
+        private System.Windows.Forms.PictureBox pbLightOff;
     }
 }
 

@@ -38,9 +38,9 @@ namespace WetPlantUI
                 }
 
                 // Los actualizamos en el label
-                label1.Text = fdata[0].ToString();
-                label2.Text = fdata[1].ToString();
-                label3.Text = fdata[2].ToString();
+                lblLightning.Text = fdata[0].ToString();
+                lblHumidity.Text = fdata[1].ToString();
+                lblTemperature.Text = fdata[2].ToString();
 
             }
         }
@@ -52,7 +52,7 @@ namespace WetPlantUI
             serial.Config("COM4", 9600);
             serial.SetTimeout(500, 500);
             */
-            label4.Text = serial.GetPort();
+            lblPort.Text = "Puerto: " + serial.GetPort();
 
             if(serial.Open() == false)
             {
@@ -70,16 +70,6 @@ namespace WetPlantUI
         {
             //Cerrar el Proceso
             thread.Abort();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
     public class Serial
