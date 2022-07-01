@@ -28,7 +28,7 @@ namespace WetPlantUI
                 // obtenemos los ultimos datos enviados
                 string data = serial.ReadData();
                 int j = 0;
-
+                string[] images = { "/Fonts/Fan.png", "/Fonts/Fan-1.png", "/Fonts/Lightblub.png", "/Fonts/Lightblub-1.png", "/Fonts/Drop.png", "/Fonts/Drop-1.png" };
 
                 // Bucle para separar los datos por espacios
                 for(int i = 0; i < data.Length; i++)
@@ -49,9 +49,10 @@ namespace WetPlantUI
                     lblTemperature.Text = fdata[2];
 
                     //Obtenemos la data de los actuadores
-                    int ventilador = Int32.Parse(fdata[3]);
-                    int luz = Int32.Parse(fdata[4]);
-                    int bomba = Int32.Parse(fdata[5]);
+                    pbFan.ImageLocation = images[Int32.Parse(fdata[3])];
+                    pbLight.ImageLocation = images[Int32.Parse(fdata[4])+2];
+                    pbBomb.ImageLocation = images[Int32.Parse(fdata[5])+4];
+
                     Thread.Sleep(500);
                 }
                 catch

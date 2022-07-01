@@ -34,12 +34,12 @@
             this.lblHumidity = new System.Windows.Forms.Label();
             this.lblLightning = new System.Windows.Forms.Label();
             this.lblSpeed = new System.Windows.Forms.Label();
-            this.pbFanOff = new System.Windows.Forms.PictureBox();
-            this.pbBombOff = new System.Windows.Forms.PictureBox();
-            this.pbLightOff = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFanOff)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBombOff)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLightOff)).BeginInit();
+            this.pbFan = new System.Windows.Forms.PictureBox();
+            this.pbBomb = new System.Windows.Forms.PictureBox();
+            this.pbLight = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBomb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLight)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTemperature
@@ -114,35 +114,35 @@
             this.lblSpeed.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblSpeed.UseMnemonic = false;
             // 
-            // pbFanOff
+            // pbFan
             // 
-            this.pbFanOff.BackColor = System.Drawing.Color.Transparent;
-            this.pbFanOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbFanOff.BackgroundImage")));
-            this.pbFanOff.Location = new System.Drawing.Point(144, 24);
-            this.pbFanOff.Name = "pbFanOff";
-            this.pbFanOff.Size = new System.Drawing.Size(72, 72);
-            this.pbFanOff.TabIndex = 8;
-            this.pbFanOff.TabStop = false;
+            this.pbFan.BackColor = System.Drawing.Color.Transparent;
+            this.pbFan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbFan.BackgroundImage")));
+            this.pbFan.Location = new System.Drawing.Point(144, 24);
+            this.pbFan.Name = "pbFan";
+            this.pbFan.Size = new System.Drawing.Size(72, 72);
+            this.pbFan.TabIndex = 8;
+            this.pbFan.TabStop = false;
             // 
-            // pbBombOff
+            // pbBomb
             // 
-            this.pbBombOff.BackColor = System.Drawing.Color.Transparent;
-            this.pbBombOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBombOff.BackgroundImage")));
-            this.pbBombOff.Location = new System.Drawing.Point(264, 24);
-            this.pbBombOff.Name = "pbBombOff";
-            this.pbBombOff.Size = new System.Drawing.Size(72, 72);
-            this.pbBombOff.TabIndex = 9;
-            this.pbBombOff.TabStop = false;
+            this.pbBomb.BackColor = System.Drawing.Color.Transparent;
+            this.pbBomb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBomb.BackgroundImage")));
+            this.pbBomb.Location = new System.Drawing.Point(264, 24);
+            this.pbBomb.Name = "pbBomb";
+            this.pbBomb.Size = new System.Drawing.Size(72, 72);
+            this.pbBomb.TabIndex = 9;
+            this.pbBomb.TabStop = false;
             // 
-            // pbLightOff
+            // pbLight
             // 
-            this.pbLightOff.BackColor = System.Drawing.Color.Transparent;
-            this.pbLightOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbLightOff.BackgroundImage")));
-            this.pbLightOff.Location = new System.Drawing.Point(384, 24);
-            this.pbLightOff.Name = "pbLightOff";
-            this.pbLightOff.Size = new System.Drawing.Size(72, 72);
-            this.pbLightOff.TabIndex = 10;
-            this.pbLightOff.TabStop = false;
+            this.pbLight.BackColor = System.Drawing.Color.Transparent;
+            this.pbLight.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbLight.BackgroundImage")));
+            this.pbLight.Location = new System.Drawing.Point(384, 24);
+            this.pbLight.Name = "pbLight";
+            this.pbLight.Size = new System.Drawing.Size(72, 72);
+            this.pbLight.TabIndex = 10;
+            this.pbLight.TabStop = false;
             // 
             // Form1
             // 
@@ -150,9 +150,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(480, 840);
-            this.Controls.Add(this.pbLightOff);
-            this.Controls.Add(this.pbBombOff);
-            this.Controls.Add(this.pbFanOff);
+            this.Controls.Add(this.pbLight);
+            this.Controls.Add(this.pbBomb);
+            this.Controls.Add(this.pbFan);
             this.Controls.Add(this.lblSpeed);
             this.Controls.Add(this.lblLightning);
             this.Controls.Add(this.lblHumidity);
@@ -168,9 +168,9 @@
             this.Text = "WetPlant";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbFanOff)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBombOff)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLightOff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBomb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLight)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -182,9 +182,9 @@
         private System.Windows.Forms.Label lblHumidity;
         private System.Windows.Forms.Label lblLightning;
         private System.Windows.Forms.Label lblSpeed;
-        private System.Windows.Forms.PictureBox pbFanOff;
-        private System.Windows.Forms.PictureBox pbBombOff;
-        private System.Windows.Forms.PictureBox pbLightOff;
+        private System.Windows.Forms.PictureBox pbFan;
+        private System.Windows.Forms.PictureBox pbBomb;
+        private System.Windows.Forms.PictureBox pbLight;
     }
 }
 
