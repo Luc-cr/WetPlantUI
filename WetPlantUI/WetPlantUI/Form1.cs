@@ -22,7 +22,7 @@ namespace WetPlantUI
         {
             while (true)
             {
-                Thread.Sleep(500);
+                //Thread.Sleep(500);
                 // Iniciamos la data en un array de strings
                 string[] fdata = {"","","","","",""};
                 // obtenemos los ultimos datos enviados
@@ -65,12 +65,17 @@ namespace WetPlantUI
         {
             // Carga de la fuente
             PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(Environment.CurrentDirectory + "/Fonts/DigitalNumbers-Regular.ttf");      
+            PrivateFontCollection pfc1 = new PrivateFontCollection();
+            pfc.AddFontFile(Environment.CurrentDirectory + "/Fonts/DigitalNumbers-Regular.ttf");
+            pfc1.AddFontFile(Environment.CurrentDirectory + "/Fonts/DidactGothic-Regular.ttf");
+            Font font = new Font(pfc.Families[0], 46);
+
             // Aplicar la fuente cargada
-            lblTemperature.Font = new Font(pfc.Families[0], 46);
-            lblHumidity.Font = new Font(pfc.Families[0], 46);
-            lblLightning.Font = new Font(pfc.Families[0], 46);
+            lblTemperature.Font = font;
+            lblHumidity.Font = font;
+            lblLightning.Font = font;
             lblSpeed.Font = new Font(pfc.Families[0], 30);
+            lblPort.Font = new Font(pfc1.Families[0], 46);
 
             // Configuracion del puerto
             serial.Config("COM4", 9600);

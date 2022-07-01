@@ -64,7 +64,7 @@
             this.lblPort.BackColor = System.Drawing.Color.Transparent;
             this.lblPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblPort.ForeColor = System.Drawing.Color.White;
-            this.lblPort.Location = new System.Drawing.Point(24, 744);
+            this.lblPort.Location = new System.Drawing.Point(24, 727);
             this.lblPort.Margin = new System.Windows.Forms.Padding(0);
             this.lblPort.Name = "lblPort";
             this.lblPort.Size = new System.Drawing.Size(432, 72);
