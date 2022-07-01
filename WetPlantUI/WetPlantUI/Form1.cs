@@ -22,11 +22,13 @@ namespace WetPlantUI
         {
             while (true)
             {
+                Thread.Sleep(500);
                 // Iniciamos la data en un array de strings
                 string[] fdata = {"","","","","",""};
                 // obtenemos los ultimos datos enviados
                 string data = serial.ReadData();
                 int j = 0;
+
 
                 // Bucle para separar los datos por espacios
                 for(int i = 0; i < data.Length; i++)
@@ -38,17 +40,19 @@ namespace WetPlantUI
                     }
                 }
 
-                // Obtenemos la data de los sensores
+                // Try Catch para una correcta sincronizacion
                 try
                 {
-                    lblLightning.Text = fdata[0].ToString();
-                    lblHumidity.Text = fdata[1].ToString();
-                    lblTemperature.Text = fdata[2].ToString();
+                    // Obtenemos la data de los sensores
+                    lblLightning.Text = fdata[0];
+                    lblHumidity.Text = fdata[1];
+                    lblTemperature.Text = fdata[2];
 
                     //Obtenemos la data de los actuadores
                     int ventilador = Int32.Parse(fdata[3]);
                     int luz = Int32.Parse(fdata[4]);
                     int bomba = Int32.Parse(fdata[5]);
+                    Thread.Sleep(500);
                 }
                 catch
                 {
@@ -59,11 +63,15 @@ namespace WetPlantUI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            /*
+            // Carga de la fuente
             PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile("WetPlantUI/Fonts/DigitalNumbers-Regular.ttf");
-            lblTemperature.Font = new Font(pfc.Families[0], 15);
-            */
+            pfc.AddFontFile(Environment.CurrentDirectory + "/Fonts/DigitalNumbers-Regular.ttf");      
+            // Aplicar la fuente cargada
+            lblTemperature.Font = new Font(pfc.Families[0], 46);
+            lblHumidity.Font = new Font(pfc.Families[0], 46);
+            lblLightning.Font = new Font(pfc.Families[0], 46);
+            lblSpeed.Font = new Font(pfc.Families[0], 30);
+
             // Configuracion del puerto
             serial.Config("COM4", 9600);
             serial.SetTimeout(500, 500);
