@@ -23,7 +23,7 @@ namespace WetPlantUI
             while (true)
             {
                 // Iniciamos la data en un array de strings
-                string[] fdata = {"","",""};
+                string[] fdata = {"","","","","",""};
                 // obtenemos los ultimos datos enviados
                 string data = serial.ReadData();
                 int j = 0;
@@ -38,26 +38,39 @@ namespace WetPlantUI
                     }
                 }
 
-                // Los actualizamos en el label
-                lblLightning.Text = fdata[0].ToString();
-                lblHumidity.Text = fdata[1].ToString();
-                lblTemperature.Text = fdata[2].ToString();
+                // Obtenemos la data de los sensores
+                try
+                {
+                    lblLightning.Text = fdata[0].ToString();
+                    lblHumidity.Text = fdata[1].ToString();
+                    lblTemperature.Text = fdata[2].ToString();
 
+                    //Obtenemos la data de los actuadores
+                    int ventilador = Int32.Parse(fdata[3]);
+                    int luz = Int32.Parse(fdata[4]);
+                    int bomba = Int32.Parse(fdata[5]);
+                }
+                catch
+                {
+
+                }
             }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            /*
             PrivateFontCollection pfc = new PrivateFontCollection();
             pfc.AddFontFile("WetPlantUI/Fonts/DigitalNumbers-Regular.ttf");
             lblTemperature.Font = new Font(pfc.Families[0], 15);
+            */
             // Configuracion del puerto
             serial.Config("COM4", 9600);
             serial.SetTimeout(500, 500);
 
             lblPort.Text = "Puerto: " + serial.GetPort();
             lblSpeed.Text = serial.GetBaudrate();
-            
+           
             if(serial.Open() == false)
             {
                 // MSG BOX de error
@@ -68,7 +81,7 @@ namespace WetPlantUI
             // Nuevo proceso
             thread = new Thread(new ThreadStart(UpdateData));
             thread.Start();
-            Thread.Sleep(100);
+            
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
@@ -77,10 +90,6 @@ namespace WetPlantUI
             thread.Abort();
         }
 
-        private void lblTemperature_Click(object sender, EventArgs e)
-        {
-
-        }
     }
     public class Serial
     {
