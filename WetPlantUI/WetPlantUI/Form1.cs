@@ -72,10 +72,15 @@ namespace WetPlantUI
 
             // Aplicar la fuente cargada
             lblTemperature.Font = font;
+            lblTemperature.TextAlign = ContentAlignment.MiddleRight;
             lblHumidity.Font = font;
+            lblHumidity.TextAlign = ContentAlignment.MiddleRight;
             lblLightning.Font = font;
+            lblLightning.TextAlign = ContentAlignment.MiddleRight;
             lblSpeed.Font = font;
+            lblSpeed.TextAlign = ContentAlignment.MiddleRight;
             lblPort.Font = new Font(pfc1.Families[0], 46, GraphicsUnit.Pixel);
+            lblPort.TextAlign = ContentAlignment.TopCenter;
 
             // Configuracion del puerto
             serial.Config("COM4", 9600);
