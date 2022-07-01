@@ -68,14 +68,14 @@ namespace WetPlantUI
             PrivateFontCollection pfc1 = new PrivateFontCollection();
             pfc.AddFontFile(Environment.CurrentDirectory + "/Fonts/DigitalNumbers-Regular.ttf");
             pfc1.AddFontFile(Environment.CurrentDirectory + "/Fonts/DidactGothic-Regular.ttf");
-            Font font = new Font(pfc.Families[0], 46);
+            Font font = new Font(pfc.Families[0], 48, GraphicsUnit.Pixel);
 
             // Aplicar la fuente cargada
             lblTemperature.Font = font;
             lblHumidity.Font = font;
             lblLightning.Font = font;
-            lblSpeed.Font = new Font(pfc.Families[0], 30);
-            lblPort.Font = new Font(pfc1.Families[0], 46);
+            lblSpeed.Font = font;
+            lblPort.Font = new Font(pfc1.Families[0], 46, GraphicsUnit.Pixel);
 
             // Configuracion del puerto
             serial.Config("COM4", 9600);
