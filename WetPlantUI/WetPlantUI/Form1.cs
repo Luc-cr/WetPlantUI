@@ -22,14 +22,14 @@ namespace WetPlantUI
         public void UpdateData()
         {
             while (true)
-            {
-                //Thread.Sleep(500);
+            { 
                 // Iniciamos la data en un array de strings
                 string[] fdata = {"","","","","",""};
                 // obtenemos los ultimos datos enviados
                 string data = serial.ReadData();
                 int j = 0;
-                string[] images = { "/Fonts/Fan.png", "/Fonts/Fan-1.png", "/Fonts/Lightblub.png", "/Fonts/Lightblub-1.png", "/Fonts/Drop.png", "/Fonts/Drop-1.png" };
+                string env = Environment.CurrentDirectory;
+                string[] images = {env + "/Fonts/Fan.png", env + "/Fonts/Fan-1.png", env + "/Fonts/Lightblub.png",env + "/Fonts/Lightblub-1.png", env + "/Fonts/Drop.png", env + "/Fonts/Drop-1.png" };
 
                 // Bucle para separar los datos por espacios
                 for(int i = 0; i < data.Length; i++)
@@ -56,10 +56,7 @@ namespace WetPlantUI
 
                     Thread.Sleep(200);
                 }
-                catch
-                {
-
-                }
+                catch{}
             }
         }
 
@@ -84,10 +81,11 @@ namespace WetPlantUI
             lblPort.Font = new Font(pfc1.Families[0], 46, GraphicsUnit.Pixel);
             lblPort.TextAlign = ContentAlignment.TopCenter;
 
+            // Obtener el archivo de configuración;
             file = new FileManager(Environment.CurrentDirectory + "/Files/Config.txt");
             string[] data = file.GetData();
 
-            // Configuracion del puerto
+            // Configuracion del puerto 
             serial.Config(data[0], Int32.Parse(data[1]));
             serial.SetTimeout(Int32.Parse(data[2]), Int32.Parse(data[3]));
 
