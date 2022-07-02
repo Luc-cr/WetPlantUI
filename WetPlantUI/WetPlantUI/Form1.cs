@@ -71,13 +71,13 @@ namespace WetPlantUI
 
             // Aplicar la fuente cargada
             lblTemperature.Font = font;
-            lblTemperature.TextAlign = ContentAlignment.MiddleRight;
+            lblTemperature.RightToLeft = RightToLeft.Yes;
             lblHumidity.Font = font;
-            lblHumidity.TextAlign = ContentAlignment.MiddleRight;
+            lblHumidity.RightToLeft = RightToLeft.Yes;
             lblLightning.Font = font;
-            lblLightning.TextAlign = ContentAlignment.MiddleRight;
+            lblLightning.RightToLeft = RightToLeft.Yes;
             lblSpeed.Font = font;
-            lblSpeed.TextAlign = ContentAlignment.MiddleRight;
+            lblSpeed.RightToLeft = RightToLeft.Yes;
             lblPort.Font = new Font(pfc1.Families[0], 46, GraphicsUnit.Pixel);
             lblPort.TextAlign = ContentAlignment.TopCenter;
 
