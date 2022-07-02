@@ -12,6 +12,7 @@ namespace WetPlantUI
         private Serial serial = new Serial();
         // Iniciar un nuevo hilo
         private Thread thread;
+        private FileManager file;
 
         public Form1()
         {
@@ -53,7 +54,7 @@ namespace WetPlantUI
                     pbLight.ImageLocation = images[Int32.Parse(fdata[4])+2];
                     pbBomb.ImageLocation = images[Int32.Parse(fdata[5])+4];
 
-                    Thread.Sleep(500);
+                    Thread.Sleep(200);
                 }
                 catch
                 {
@@ -83,9 +84,12 @@ namespace WetPlantUI
             lblPort.Font = new Font(pfc1.Families[0], 46, GraphicsUnit.Pixel);
             lblPort.TextAlign = ContentAlignment.TopCenter;
 
+            file = new FileManager(Environment.CurrentDirectory + "/Files/Config.txt");
+            string[] data = file.GetData();
+
             // Configuracion del puerto
-            serial.Config("COM4", 9600);
-            serial.SetTimeout(500, 500);
+            serial.Config(data[0], Int32.Parse(data[1]));
+            serial.SetTimeout(Int32.Parse(data[2]), Int32.Parse(data[3]));
 
             lblPort.Text = "Puerto: " + serial.GetPort();
             lblSpeed.Text = serial.GetBaudrate();
@@ -180,6 +184,26 @@ namespace WetPlantUI
         {
             // Enviar data
             serialport.Write(data);
+        }
+    }
+    public class FileManager
+    {
+        string path;
+        public FileManager(string file)
+        {
+            path = file;
+        }
+        public string[] GetData()
+        {
+            string[] lines = System.IO.File.ReadAllLines(path);
+            string[] final = new string[lines.Length];
+            int i = 0;
+            foreach (string line in lines)
+            {
+                final[i] = line.Split('=')[1];
+                ++i;
+            }
+            return final;
         }
     }
 }
